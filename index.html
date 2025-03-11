@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <nav id="menu">
+            <ul>
+                <li onclick="showSection('inicio')">Inicio</li>
+                <li onclick="showSection('sobre-mi')">Sobre Mí</li>
+                <li onclick="showSection('objetivo-profesional')">Objetivo</li>
+                <li onclick="showSection('experiencia')">Experiencia</li>
+                <li onclick="showSection('formacion')">Formación</li>
+                <li onclick="showSection('idiomas')">Idiomas</li>
+                <li onclick="showSection('certificaciones')">Certificaciones</li>
+                <li onclick="showSection('habilidades')">Habilidades</li>
+                <li onclick="showSection('contacto')">Contacto</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="seccion activa">
+            <h1 class="titulo-animado">Bienvenido a mi perfil profesional</h1>
+            <img src="foto.jpg" alt="Foto de perfil" class="perfil animacion-entrada">
+            <p class="intro animacion-entrada">Desarrollador web apasionado por crear soluciones innovadoras.</p>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="sobre-mi" class="seccion">
+            <h2 class="titulo-animado">Sobre Mí</h2>
+            <div class="contenido-sobre-mi animacion-entrada">
+                <p>
+                    Soy un joven de 21 años, apasionado de la tecnología y el aprendizaje continuo, con una sólida formación en Ingeniería en Informática y experiencia en desarrollo de software, seguridad informática y bases de datos. Mi curiosidad y compromiso me han llevado a explorar diferentes áreas del conocimiento, como lo son la contabilidad, derecho, administración y el desarrollo personal, lo que me permite abordar desafíos desde una perspectiva integral y creativa.
+                </p>
+                <p>
+                    Me considero una persona responsable, proactiva, orientada a resultados y detallista, con habilidades en la comunicación, el liderazgo y la gestión óptima de proyectos y equipos de trabajo. Hablo el inglés y estoy siempre en búsqueda de oportunidades para colaborar en proyectos innovadores y de impacto.
+                </p>
+                <p>
+                    En mi tiempo libre, disfruto aprender nuevas tecnologías, leer sobre tendencias en el campo, salir con mis amigos y mi familia, jugar basquet y videojuegos, lo que complementa mi crecimiento tanto profesional como personal.
+                </p>
+                <p>
+                    Aprecio mucho a los animales, tengo la idea de que son una de las mejores compañías que puedes tener, pues siempre estarán para ti en los mejores y peores momentos. Amo mucho a mi perro Teddy.
+                </p>
+                <img src="teddy.jpg" alt="Foto de Teddy, mi perro" class="foto-perro">
+            </div>
+        </section>
+
+        <!-- Sección Objetivo Profesional -->
+        <section id="objetivo-profesional" class="seccion">
+            <h2 class="titulo-animado">Objetivo Profesional</h2>
+            <div class="contenido-objetivo animacion-entrada">
+                <p>
+                    Apasionado por la tecnología y la innovación, busco integrarme como profesional en un entorno dinámico donde pueda aplicar mis habilidades en redes, desarrollo de software y gestión de proyectos en áreas interdisciplinarias para contribuir al crecimiento empresarial/institucional y personal.
+                </p>
+                <p>
+                    Mi objetivo es utilizar mi formación en áreas como administración, contaduría, informática y derecho, para colaborar en la implementación de soluciones tecnológicas y la optimización de procesos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección Experiencia Profesional -->
+        <section id="experiencia" class="seccion">
+            <h2 class="titulo-animado">Experiencia Profesional</h2>
+            <div class="experiencia-lista">
+                <!-- Experiencia 1 -->
+                <button onclick="toggleInfo('exp1')" class="boton-experiencia animacion-entrada">
+                    <span class="puesto">Full Stack and Support Developer</span>
+                </button>
+                <div id="exp1" class="info-experiencia oculto animacion-entrada">
+                    <p class="empresa">SEP Estado de México</p>
+                    <p class="fecha">FEB. 2023 - Actualidad</p>
+                    <ul class="funciones">
+                        <li>Instalación, configuración y resolución de dispositivos de red.</li>
+                        <li>Desarrollo con HTML, CSS, JavaScript, Java, React.js, Ruby, C# (.NET), Python (Django) y Angular.</li>
+                        <li>Integración de APIs y uso de Jenkins para la automatización de despliegues.</li>
+                        <li>Gestión de bases de datos SQL y servidores AWS.</li>
+                        <li>Implementación de medidas de seguridad: Autenticación para protección de datos y acceso a sistemas.</li>
+                        <li>Manejo de Git y administración de repositorios en GitHub.</li>
+                        <li>Apoyo administrativo para la innovación en procesos de trámite documental.</li>
+                        <li>Revisión de egresos por conceptos de honorarios y sistematización de procesos contables con AspelCOI.</li>
+                    </ul>
+                </div>
+
+                <!-- Experiencia 2 -->
+                <button onclick="toggleInfo('exp2')" class="boton-experiencia animacion-entrada">
+                    <span class="puesto">Technical Support</span>
+                </button>
+                <div id="exp2" class="info-experiencia oculto animacion-entrada">
+                    <p class="empresa">SACMEX</p>
+                    <p class="fecha">FEB. 2022 – DIC. 2022</p>
+                    <ul class="funciones">
+                        <li>Apoyo a la Estructura Orgánica: Revisión del POA, informe de ingresos, rendición de cuentas, revisión de estimaciones, gestión de archivo, contabilidad intermedia.</li>
+                        <li>Desarrollo y actualización de páginas web mediante HTML, CSS y JavaScript.</li>
+                    </ul>
+                </div>
+
+                <!-- Experiencia 3 -->
+                <button onclick="toggleInfo('exp3')" class="boton-experiencia animacion-entrada">
+                    <span class="puesto">Technical Support</span>
+                </button>
+                <div id="exp3" class="info-experiencia oculto animacion-entrada">
+                    <p class="empresa">TESJI</p>
+                    <p class="fecha">JUL. 2021 – DIC. 2021</p>
+                    <ul class="funciones">
+                        <li>Capacitación en la instalación y uso de diferentes IDE y Software a la División de Informática.</li>
+                        <li>Implementación de nuevas técnicas para la gestión administrativa.</li>
+                        <li>Ejecución de procesos y procedimientos.</li>
+                        <li>Coordinación con diferentes departamentos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Formación -->
+        <section id="formacion" class="seccion">
+            <h2 class="titulo-animado">Formación Académica</h2>
+            <div class="formacion-lista">
+                <button onclick="toggleInfo('form1')" class="boton-experiencia animacion-entrada">
+                    <span class="puesto">Ingeniería en Informática</span>
+                </button>
+                <div id="form1" class="info-experiencia oculto animacion-entrada">
+                    <p class="empresa">Universidad XYZ</p>
+                    <p class="fecha">2019 - 2023</p>
+                    <ul class="funciones">
+                        <li>Especialización en desarrollo de software y bases de datos.</li>
+                        <li>Proyecto final: Desarrollo de un sistema de gestión empresarial.</li>
+                    </ul>
+                </div>
+
+                <button onclick="toggleInfo('form2')" class="boton-experiencia animacion-entrada">
+                    <span class="puesto">Curso de Desarrollo Web</span>
+                </button>
+                <div id="form2" class="info-experiencia oculto animacion-entrada">
+                    <p class="empresa">Platzi</p>
+                    <p class="fecha">2022</p>
+                    <ul class="funciones">
+                        <li>HTML, CSS, JavaScript, React.js y Node.js.</li>
+                        <li>Proyecto final: Aplicación web de gestión de tareas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Idiomas -->
+        <section id="idiomas" class="seccion">
+            <h2 class="titulo-animado">Idiomas</h2>
+            <div class="contenido-objetivo animacion-entrada">
+                <p>Español: Nativo</p>
+                <p>Inglés: Avanzado (C1)</p>
+            </div>
+        </section>
+
+        <!-- Sección Certificaciones -->
+        <section id="certificaciones" class="seccion">
+            <h2 class="titulo-animado">Certificaciones</h2>
+            <div class="contenido-objetivo animacion-entrada">
+                <p>Certificado en Desarrollo Web Full Stack - Platzi</p>
+                <p>Certificado en Seguridad Informática - Cisco</p>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades" class="seccion">
+            <h2 class="titulo-animado">Habilidades</h2>
+            <div class="habilidades-lista">
+                <div class="habilidad animacion-entrada">HTML</div>
+                <div class="habilidad animacion-entrada">CSS</div>
+                <div class="habilidad animacion-entrada">JavaScript</div>
+                <div class="habilidad animacion-entrada">React</div>
+                <div class="habilidad animacion-entrada">Node.js</div>
+                <div class="habilidad animacion-entrada">Git</div>
+                <div class="habilidad animacion-entrada">SQL</div>
+                <div class="habilidad animacion-entrada">AWS</div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="seccion">
+            <h2 class="titulo-animado">Contacto</h2>
+            <form id="contacto-form" class="animacion-entrada">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="social-links animacion-entrada">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p class="animacion-entrada">&copy; 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
